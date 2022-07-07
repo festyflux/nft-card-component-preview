@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+     max-width: 1440px; 
+     font-family: Outfit;
+     color: hsl(215, 51%, 70%);
+}
+
+
+.card{
+    width: 300px;
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction:column;
+    margin-top: 3rem;
+    margin-bottom: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 15px;
+        
+} 
+
+.card-image{
+    
+    min-height: 120px;
+    position: relative;    
+}
+
+.image{
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    /* background: hsl(178, 100%, 50%); */
+    background: rgba(0,255,247, 0.5);
+    border-radius: 15px;
+    color: #fff;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease;
+}
+
+.card-image:hover .overlay{
+    opacity: 1;       
+}
+
+img{
+    /* opacity: 1; */
+    z-index: 100;
+}
+
+.card-details{
+
+}
+
+.card-details h1{
+    color: #fff;
+    padding: 1.25rem 0;
+}
+
+.card-details p{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.balance{
+    margin: 1.25rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.balance .eth{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+}
+
+.balance .eth img{
+    margin-right: 5px;
+      
+}
+.balance .eth p{
+    color: hsl(178, 100%, 50%);     
+}
+
+.balance .days{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+}
+
+.balance .days img{
+    
+      
+}
+
+.balance .days p{
+    margin-left: 7px;    
+}
+
+hr{
+    border-style:solid none none;;
+    border-width: 1px;
+    border-color:hsl(215, 32%, 27%);
+}
+
+.creator{
+    margin: 1.25rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.creator .creator-img{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+
+}
+
+.creator p{
+    margin-left: 1rem;
+    font-size: 14px;
+}
+
+.creator span{
+    color: #fff;
+}
+
+.active:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.attribution a:hover { 
+    color: hsl(178, 100%, 50%); 
+}
+
+@media screen and (max-width: 375px){
+    .card{
+        width: 250px;
+        margin-top: 2rem;
+        margin-bottom: 1.25rem;        
+    } 
+
+
+}
